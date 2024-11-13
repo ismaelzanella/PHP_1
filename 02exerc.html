@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 1</title>
+</head>
+<body>
+  <form action="02valor.php" method="get" autocomplete="off">
+    <p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"/><br/></p>
+    <p><label for="iano">Ano de Nascimento: </label><input type="number" name="ano" id="iano" value="0"/><br/></p>
+    <p>
+      <fieldset><legend>Sexo</legend>
+        <input type="radio" name="sexo" id="masc" value="Homem" checked/>
+        <label for="masc">Masculino</label><br/>
+        <input type="radio" name="sexo" id="fem" value="Mulher"/>
+        <label for="fem">Feminino</label>
+      </fieldset><br/>
+    </p>
+    <p><input type="submit" value="Enviar"/></p>
+  </form>  
+</body>
+</html>
