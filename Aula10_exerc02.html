@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 10 exercício 02</title>
+</head>
+<body>
+  <!--Objetivo: Ler o dia da semana e mostrar se precisa ir para a escola-->
+  <form action="Aula10_exerc_02.php" method="get">
+    <label for="idata">Data:</label><input type="date" name="data" id="idata">
+    <input type="submit" value="Verificar">
+  </form>
+  <script>
+    const hoje = new Date();
+    const formatoHoje = hoje.toISOString().split('T')[0];//ISO:yyyy-mm-ddTHH:MM:SSZ... split corta a partir do "T" em diante(obs.: [0]=1º "T" encontrado).
+    document.getElementById('idata').value = formatoHoje;
+  </script>
+</body>
+</html>
